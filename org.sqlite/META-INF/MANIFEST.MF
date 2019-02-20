@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Sqlite
+Bundle-SymbolicName: org.sqlite
+Bundle-Version: 3.21.0
+Bundle-ClassPath: sqlite-jdbc-3.21.0.jar
+Export-Package: org.sqlite,
+ org.sqlite.core,
+ org.sqlite.date,
+ org.sqlite.javax,
+ org.sqlite.jdbc3,
+ org.sqlite.jdbc4,
+ org.sqlite.util
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

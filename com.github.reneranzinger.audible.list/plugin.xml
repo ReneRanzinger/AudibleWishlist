@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="com.github.reneranzinger.audible.list"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/com.github.reneranzinger.audible.list/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="com.github.reneranzinger.audible.list">
+         </property>
+         <property name="lifeCycleURI" value="bundleclass://com.github.reneranzinger.audible.list/com.github.reneranzinger.audible.list.lifecycle.LifeCycleManager" /> 
+      </product>
+   </extension>
+
+</plugin>

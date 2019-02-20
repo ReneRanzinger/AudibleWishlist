@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="Audible List 0.1">
+    <tags>shellMaximized</tags>
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_6aklUOmIEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_BlwZoOmJEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.perspective.0">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_OW8NIOmJEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.partsashcontainer.0" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_IEydIOmKEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.partstack.0" containerData="2000">
+            <children xsi:type="basic:Part" xmi:id="_KsVHIOmKEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.part.categories" contributionURI="bundleclass://com.github.reneranzinger.audible.list/com.github.reneranzinger.audible.list.part.CategoryPart" label="Categories">
+              <menus xsi:type="menu:PopupMenu" xmi:id="_LNpSEPJqEee21amenm7PUA" elementId="com.github.reneranzinger.audible.list.popupmenu.category">
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_QilWcPJqEee21amenm7PUA" elementId="com.github.reneranzinger.audible.list.handledmenuitem.new" label="New category..." tooltip="Creates a new category" command="_dCVQ4PMIEeekFNQ9K6cYhQ"/>
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_a9fPEPJqEee21amenm7PUA" elementId="com.github.reneranzinger.audible.list.handledmenuitem.rename" label="Rename ..." tooltip="Rename a category" command="_ZCNqYPMIEeekFNQ9K6cYhQ"/>
+                <children xsi:type="menu:HandledMenuItem" xmi:id="_f6iX4PJqEee21amenm7PUA" elementId="com.github.reneranzinger.audible.list.handledmenuitem.delete" label="Delete" tooltip="Delete a cateory" command="_RO3C0PMIEeekFNQ9K6cYhQ"/>
+              </menus>
+            </children>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_I26doOmKEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.partstack.1" containerData="5000">
+            <children xsi:type="basic:Part" xmi:id="_KYiPIOmPEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.part.list" label="List"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_MnvRoOmPEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.partstack.2" containerData="3000">
+            <children xsi:type="basic:Part" xmi:id="_OBJ7oOmPEeewQ8RKMLbhRg" elementId="com.github.reneranzinger.audible.list.part.details" label="Details"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <handlers xmi:id="_6QmFYPMJEeekFNQ9K6cYhQ" elementId="com.github.reneranzinger.audible.list.handler.category.new" contributionURI="bundleclass://com.github.reneranzinger.audible.list/com.github.reneranzinger.audible.list.part.category.handler.NewCategoryHandler" command="_dCVQ4PMIEeekFNQ9K6cYhQ"/>
+    <handlers xmi:id="_XQGCsASyEeiG_JSKqE8_kA" elementId="com.github.reneranzinger.audible.list.handler.category.delete" contributionURI="bundleclass://com.github.reneranzinger.audible.list/com.github.reneranzinger.audible.list.part.category.handler.DeleteCategoryHandler" command="_RO3C0PMIEeekFNQ9K6cYhQ"/>
+    <handlers xmi:id="_zZR84AfREeiOc4vyaScItQ" elementId="com.github.reneranzinger.audible.list.handler.category.rename" contributionURI="bundleclass://com.github.reneranzinger.audible.list/com.github.reneranzinger.audible.list.part.category.handler.RenameCategoryHandler" command="_ZCNqYPMIEeekFNQ9K6cYhQ"/>
+  </children>
+  <rootContext xmi:id="_c3AF2cjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_c3AF2sjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_c3AF28jYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_RO3C0PMIEeekFNQ9K6cYhQ" elementId="com.github.reneranzinger.audible.list.command.category.delete" commandName="Delete Category" description="Deleting a category"/>
+  <commands xmi:id="_ZCNqYPMIEeekFNQ9K6cYhQ" elementId="com.github.reneranzinger.audible.list.command.category.rename" commandName="Rename Category" description="Rename a cateogry"/>
+  <commands xmi:id="_dCVQ4PMIEeekFNQ9K6cYhQ" elementId="com.github.reneranzinger.audible.list.command.category.new" commandName="New Category" description="Create new category"/>
+  <addons xmi:id="_c3AF0sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_c3AF08jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_c3AF1MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_c3AF1cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_c3AF1sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_c3AF18jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_c3AF2MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
