@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Developer
+Bundle-SymbolicName: com.github.reneranzinger.audible.list.fragment.developer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Rene Ranzinger
+Fragment-Host: com.github.reneranzinger.audible.list;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-PatchFragment: true
+Bundle-ClassPath: developers.jar,
+ .
